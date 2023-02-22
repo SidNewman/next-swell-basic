@@ -1,0 +1,8 @@
+.wrapper{
+    @apply relative w-full overflow-hidden rounded-lg bg-gray-200 w-auto h-[350px]
+}
+
+.priceDetails{
+    @apply flex gap-2;
+    @apply w-full;
+}
