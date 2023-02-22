@@ -1,0 +1,35 @@
+.wrapper{
+    // @apply fixed;
+    @apply top-0;
+    @apply w-full;
+    @apply flex;
+    @apply bg-[#2A0944];
+    @apply text-white;
+    @apply py-6 px-20;
+    @apply z-[100];
+
+    .inner{
+        @apply max-w-[1500px];
+        @apply flex;
+        @apply w-full;
+        @apply mx-auto;
+   
+        > div{
+            @apply flex;
+            @apply gap-8;
+    
+            &:last-of-type{
+                @apply ml-auto
+            }
+        }
+   
+    }
+   
+}
+
+.alert{
+    @apply bg-[#3B185F];
+    @apply text-white;
+    @apply text-center;
+    @apply p-2;
+}
