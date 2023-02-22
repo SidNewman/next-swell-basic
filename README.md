@@ -12,7 +12,7 @@ NEXT_PUBLIC_SWELL_STORE_ID=your_swell_store_id_here
 NEXT_PUBLIC_SWELL_PUBLIC_KEY=your_swell_store_public_key_here
 NEXT_PRIVATE_SWELL_KEY=your_swell_store_private_key_here
 ```
-(that should connect to your swell store, provided you hasve obviosuly got an account and an active store)
+(that should connect to your swell store, provided you have obviously got an account and an active store)
 
 :point_down:
 
