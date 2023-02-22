@@ -1,0 +1,78 @@
+.wrapper{
+    @apply max-w-[1500px];
+    @apply flex flex-col;
+    @apply w-full;
+    @apply mx-auto;
+    @apply py-6 px-20;
+
+    &.row{
+        @apply flex-row;
+        @apply gap-20;
+        @apply py-36;
+    }
+
+    h1{
+        @apply mt-10 text-4xl font-bold uppercase text-gray-900 sm:text-5xl sm:tracking-tight lg:text-5xl;
+    }
+
+    h3{
+        @apply text-4xl font-bold uppercase;
+    }
+
+    button{
+        @apply bg-[#FEC260];
+        @apply p-6;
+        @apply font-black;
+        @apply max-w-[250px];
+        color: black !important;
+        @apply mt-8;
+    }
+}
+
+.desc{
+    @apply mt-10;
+
+    h2{
+        @apply text-[2.5rem];
+        @apply underline;
+    }
+
+    p{
+        @apply my-8;
+        @apply text-[1.3rem];
+    }
+
+    a{
+        @apply underline;
+    }
+}
+
+.hero{
+    @apply relative;
+    @apply bg-[#2A0944];
+    @apply min-h-[60vh];
+    top: -2em;
+
+    img{
+        @apply block;
+        @apply mx-auto;
+    }
+
+    .promoBadge{
+        @apply absolute;
+        @apply block;
+        @apply bottom-[30px];
+        @apply left-[30px];
+        @apply p-8;
+        @apply text-white;
+        background: rgba(42, 9, 68,0.8);
+        @apply text-2xl;
+        @apply max-w-[25%];
+    }
+}
+
+.featuredCat{
+    width: 500px;
+    height: 500px;
+    @apply relative;
+}
