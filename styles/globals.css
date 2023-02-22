@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Asap', sans-serif;
+}
+
+body.blocked{
+  overflow: hidden;
+}
+
+body.blocked::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  display: block;
+  background: rgba(0,0,0,.9);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.blue{
+    background: #3B185F !important;
+    color: white !important;
+}
+
+.yellow{
+    background: #FEC260 !important;
+    color: black !important;
+}
+
+.pink{
+    background: #A12568 !important;
+}
+
