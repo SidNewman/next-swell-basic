@@ -1,5 +1,7 @@
 # Next.js with Swell | A headless api first ecommerce template starter
 
+This is somewthing I have been playing around with in my free time. My goal is to update this to use all of swells features at somepoint and eventually move to full TypeScript...
+
 DEMO HERE: [next-swell-demo.vercel.app/](https://next-swell-demo.vercel.app/)
 
 ### To get started:
