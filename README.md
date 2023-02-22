@@ -6,7 +6,7 @@ DEMO HERE: [next-swell-demo.vercel.app/](https://next-swell-demo.vercel.app/)
 :point_down:
 ### run ```pnpm i```
 :point_down:
-### Create a new .env like so:
+### Create a new ```.env``` like so:
 ```
 NEXT_PUBLIC_SWELL_STORE_ID=your_swell_store_id_here
 NEXT_PUBLIC_SWELL_PUBLIC_KEY=your_swell_store_public_key_here
