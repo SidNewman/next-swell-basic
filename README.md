@@ -1,4 +1,4 @@
-# Next.js with Swell | A headless api first ecommerce template
+# Next.js with Swell | A headless api first ecommerce template starter
 
 DEMO HERE: [next-swell-demo.vercel.app/](https://next-swell-demo.vercel.app/)
 
