@@ -1,0 +1,145 @@
+.wrapper{
+    @apply flex flex-col w-[500px] h-full gap-4 absolute right-0 top-[72px];
+    background: #fff;
+    border-left: 4px solid #000;;
+    transition: all .5s ease;
+    position: fixed;
+    bottom: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
+
+    &.closed{
+        transform: translateX(100%);
+    }
+
+    &.open{
+        transform: translateX(0);
+        z-index: 10;
+    }
+
+    > div{
+        @apply p-4;
+        @apply overflow-auto;
+
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+    
+        &::-webkit-scrollbar {
+            display: none;
+          }
+    }
+
+    h2{
+        @apply text-center;
+        @apply uppercase;
+        @apply font-black;
+        @apply text-[2rem];
+    }
+}
+
+.totals{
+    @apply text-center;
+    @apply uppercase;
+    @apply font-black;
+    @apply text-[1.4rem];
+}
+
+.allCart{
+    @apply flex gap-20;
+}
+
+.lineItems{
+    @apply flex flex-col gap-4;
+    @apply max-w-[500px];
+    @apply flex-[1];
+    @apply relative;
+
+    .lineItem{
+        @apply border-b-2 border-black;
+        @apply flex gap-8;
+        @apply w-full;
+        @apply p-6;
+
+        &:last-of-type{
+            @apply border-b-0;
+            @apply mt-[60px];
+        }
+    }
+}
+
+.lineItem_Media{
+    @apply relative;
+    @apply w-[130px];
+    @apply h-[130px];
+}
+
+.lineItem_Info{
+   @apply flex flex-col justify-center gap-3;
+}
+
+.cartSummary{
+    @apply flex-[1];
+    @apply flex flex-col items-center justify-center;
+    @apply bg-black;
+    @apply text-white;
+    @apply p-6;
+
+    .title{
+        @apply text-[2rem];
+
+        &:last-of-type{
+            @apply mb-6;
+        }
+    }
+}
+
+.button{
+    @apply bg-white;
+    @apply text-black;
+    @apply px-6 py-2;
+    @apply text-[2rem];
+    @apply border-2 border-black;
+    @apply min-w-[350px];
+    @apply text-center;
+    transition: all .4s ease;
+
+    &:hover{
+        @apply bg-black;
+        @apply text-white;
+        @apply border-2 border-white;
+        transition: all .4s ease;
+    }
+}
+
+.loading{
+    @apply fixed;
+    @apply bottom-0 left-0 right-0 top-[72px];
+    @apply w-screen h-screen;
+    @apply bg-white;
+    z-index: 10;
+    @apply max-w-[1500px];
+    @apply flex flex-col;
+    @apply mx-auto;
+    @apply py-6 px-20;
+}
+
+.dangerPrompt{
+    @apply uppercase;
+    @apply text-[red];
+    @apply font-black;
+    @apply underline;
+    @apply cursor-pointer;
+    @apply p-0;
+}
+
+.flyoutFooter{
+    @apply flex flex-col gap-4;
+    @apply fixed;
+    @apply bottom-0 left-[1rem] right-[1rem];
+    @apply bg-white;
+    @apply pb-[80px] pt-[20px];
+}
