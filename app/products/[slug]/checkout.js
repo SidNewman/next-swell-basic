@@ -7,6 +7,9 @@ import styles from './product.module.scss';
 
 const Checkout = ({product}) => {
 
+  const {purchase_options} = product || {}
+  const {subscription} = purchase_options || {}
+
     async function checkout(productId) {
         await swell.cart.setItems([])
         await swell.cart.addItem({
@@ -17,9 +20,16 @@ const Checkout = ({product}) => {
         window.open(cart.checkout_url)
       }
 
-    return (
-        <button className={styles.button} onClick={() => checkout(product.id)}>Checkout Now</button>
-    )
+      if(subscription?.active){
+        return (
+          <>
+          </>
+        )
+      } else {
+        return (
+          <button className={styles.button} onClick={() => checkout(product.id)}>Checkout Now</button>
+      )
+      }
 }
 
 export default Checkout;
