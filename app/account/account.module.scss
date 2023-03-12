@@ -40,6 +40,10 @@
     @apply grid-cols-3;
     @apply gap-8;
 
+    &.orderHistory{
+        @apply grid-cols-3;
+    }
+
     aside{
         flex: 1;
         @apply relative;
@@ -145,7 +149,9 @@
 
 .orderList{
     @apply flex flex-col;
-    @apply max-w-[70%];
+    // @apply max-w-[70%];
+    @apply mb-10;
+    border: 2px solid black;
 }
 
 .orderMeta{
@@ -155,6 +161,10 @@
     @apply text-white;
     @apply p-6;
     background: #3B185F !important;
+
+    &.orderFooter{
+        margin-top: auto;
+    }
 }
 
 

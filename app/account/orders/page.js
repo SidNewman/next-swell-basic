@@ -53,8 +53,6 @@ const Orders = () => {
         router.push('/account/login')
     }
 
-    console.log(orders)
-
     return(
         <div className={styles.container}>
             {!account ? 
@@ -62,7 +60,7 @@ const Orders = () => {
             : 
             <>
                 <h1 className="mt-20 mb-20 text-4xl font-bold text-center uppercase text-gray-900 sm:text-5xl sm:tracking-tight lg:text-5xl">Account</h1>
-                <div className={styles.innerAccount}>
+                <div className={`${styles.innerAccount} ${styles.orderHistory}`}>
                 <aside className={styles.panel}>
                     <div className='flex justify-between'>
                     <h1>hello {account.first_name}!</h1>
@@ -78,9 +76,9 @@ const Orders = () => {
                     </Link>
                 </aside>
 
-                <section>
+                <section className='col-span-2'>
                     <h2>Your Orders</h2>
-                    <div>
+                    <div className='grid grid-cols-3 gap-8'>
                         {
                         orders ? orders.map((o,i)=>{
                             return (
@@ -105,9 +103,19 @@ const Orders = () => {
                 
                                         })}
                                     </div>
-                                    <div className={styles.orderMeta}>
-                                        <button>Re-order</button>
-                                    </div>
+                                    { 
+                                    o.subscription_id ? 
+                                    <div className={`${styles.orderMeta} ${styles.orderFooter}`}>
+                                    <Link href={`/account/subscription/${o.subscription_id}`}>
+                                        <button>Manage</button>
+                                    </Link>
+                                   </div>
+                                : 
+                                <div className={`${styles.orderMeta} ${styles.orderFooter}`}>
+                                <button>Re-order</button>
+                            </div>
+                                    }
+                                   
                                     
                                 </div>
                             )

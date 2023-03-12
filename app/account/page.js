@@ -82,7 +82,7 @@ const Account = () => {
                 <aside className={styles.panel}>
                     {account.order_count > 0 ? 
                     <div className='flex justify-center items-center h-full'>
-                        <Link href="/account/orders"><button className='p-8 text-2xl'>View orders</button></Link>
+                        <Link href="/account/orders"><button className='p-8 text-2xl'>View orders / subscriptions</button></Link>
                     </div>
                     : <div className='flex justify-center items-center h-full'>
                     <Link href="/products"><button className='p-8 text-2xl'>No Orders yet :(</button></Link>
